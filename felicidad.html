@@ -3,59 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <title>Felicidad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilo personalizado -->
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f1c40f;
-      color: white;
-      text-align: center;
-      padding: 2em;
+      background: linear-gradient(to bottom right, #f1c40f, #f39c12);
+      color: #fff;
+      padding-top: 60px;
+    }
+
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+      color: #fff;
     }
 
     ul {
-      text-align: left;
-      max-width: 600px;
-      margin: auto;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "✔️";
+      margin-right: 10px;
     }
 
     button {
-      margin-top: 20px;
-      padding: 10px 25px;
-      font-size: 16px;
-      background-color: white;
-      color: black;
+      background-color: #fff;
+      color: #333;
       border: none;
+      padding: 10px 25px;
       border-radius: 8px;
-      cursor: pointer;
+      margin-top: 20px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ddd;
     }
 
     #mensaje {
       margin-top: 20px;
-      font-size: 18px;
+      font-size: 1.1rem;
       font-style: italic;
+      color: #fff;
     }
   </style>
 </head>
 <body>
-  <h1>😊 La Felicidad</h1>
-  <p>La felicidad es una emoción positiva que sentimos cuando experimentamos alegría, satisfacción o bienestar. Es clave para una vida equilibrada.</p>
+  <div class="container">
+    <div class="content-box text-center">
+      <h1><i class="fa-solid fa-face-smile-beam"></i> La Felicidad</h1>
+      <p>La felicidad es una emoción positiva que sentimos cuando experimentamos alegría, satisfacción o bienestar. Es clave para una vida equilibrada.</p>
 
-  <h2>¿Cuándo sentimos felicidad?</h2>
-  <ul>
-    <li>Al compartir tiempo con personas que queremos</li>
-    <li>Al lograr una meta personal</li>
-    <li>Al escuchar música que nos gusta</li>
-  </ul>
+      <h2>¿Cuándo sentimos felicidad?</h2>
+      <ul class="text-left">
+        <li>Al compartir tiempo con personas que queremos</li>
+        <li>Al lograr una meta personal</li>
+        <li>Al escuchar música que nos gusta</li>
+      </ul>
 
-  <h2>¿Cómo mantenerla?</h2>
-  <ul>
-    <li>Agradecer las cosas pequeñas</li>
-    <li>Practicar actividades que te gustan</li>
-    <li>Rodearte de personas positivas</li>
-  </ul>
+      <h2>¿Cómo mantenerla?</h2>
+      <ul class="text-left">
+        <li>Agradecer las cosas pequeñas</li>
+        <li>Practicar actividades que te gustan</li>
+        <li>Rodearte de personas positivas</li>
+      </ul>
 
-  <button onclick="mostrarMensaje()">Mensaje para ti</button>
-  <div id="mensaje"></div>
+      <button onclick="mostrarMensaje()">Mensaje para ti</button>
+      <div id="mensaje"></div>
+    </div>
+  </div>
 
   <script>
     function mostrarMensaje() {
