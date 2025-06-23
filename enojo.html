@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Enojo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+      color: #fff;
+      text-align: center;
+      padding: 3em 1em;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto 2em;
+      line-height: 1.6;
+    }
+
+    h2 {
+      margin-top: 2em;
+      font-size: 2em;
+      color: #ffd9d3;
+    }
+
+    ul {
+      text-align: left;
+      max-width: 600px;
+      margin: 1em auto;
+      padding-left: 1.2em;
+    }
+
+    ul li {
+      margin-bottom: 0.6em;
+      font-size: 1.1em;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "🔥";
+      position: absolute;
+      left: -1.2em;
+      top: 0;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 1em;
+      font-weight: bold;
+      background-color: #fff;
+      color: #e74c3c;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #fdd;
+      transform: scale(1.05);
+    }
+
+    #mensaje {
+      margin-top: 25px;
+      font-size: 1.2em;
+      font-style: italic;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+
+    #mensaje.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>😠 El Enojo</h1>
+  <p>El enojo es una emoción que aparece cuando sentimos injusticia, frustración o daño. No es mala, pero debemos aprender a expresarla bien.</p>
+
+  <h2>¿Cuándo sentimos enojo?</h2>
+  <ul>
+    <li>Cuando alguien nos falta al respeto</li>
+    <li>Al sentirnos incomprendidos</li>
+    <li>Cuando algo no sale como esperábamos</li>
+  </ul>
+
+  <h2>¿Cómo controlarlo?</h2>
+  <ul>
+    <li>Respirar profundo y contar hasta 10</li>
+    <li>Hacer ejercicio o escribir lo que sientes</li>
+    <li>Hablar sin herir a otros</li>
+  </ul>
+
+  <button onclick="mostrarMensaje()">Mensaje para ti</button>
+  <div id="mensaje"></div>
+
+  <script>
+    function mostrarMensaje() {
+      const mensaje = document.getElementById('mensaje');
+      mensaje.textContent = 'Tu enojo es válido, pero puedes canalizarlo con calma 🔥';
+      mensaje.classList.add('visible');
+    }
+  </script>
+</body>
+</html>
