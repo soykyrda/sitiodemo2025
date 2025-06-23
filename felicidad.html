@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Felicidad</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1c40f;
+      color: white;
+      text-align: center;
+      padding: 2em;
+    }
+
+    ul {
+      text-align: left;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 25px;
+      font-size: 16px;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #mensaje {
+      margin-top: 20px;
+      font-size: 18px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>😊 La Felicidad</h1>
+  <p>La felicidad es una emoción positiva que sentimos cuando experimentamos alegría, satisfacción o bienestar. Es clave para una vida equilibrada.</p>
+
+  <h2>¿Cuándo sentimos felicidad?</h2>
+  <ul>
+    <li>Al compartir tiempo con personas que queremos</li>
+    <li>Al lograr una meta personal</li>
+    <li>Al escuchar música que nos gusta</li>
+  </ul>
+
+  <h2>¿Cómo mantenerla?</h2>
+  <ul>
+    <li>Agradecer las cosas pequeñas</li>
+    <li>Practicar actividades que te gustan</li>
+    <li>Rodearte de personas positivas</li>
+  </ul>
+
+  <button onclick="mostrarMensaje()">Mensaje para ti</button>
+  <div id="mensaje"></div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje').textContent = 'Recuerda que la alegría se encuentra en lo sencillo ✨';
+    }
+  </script>
+</body>
+</html>
