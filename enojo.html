@@ -3,78 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <title>El Enojo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: 'Roboto', sans-serif;
       background: linear-gradient(135deg, #e74c3c, #c0392b);
       color: #fff;
-      text-align: center;
-      padding: 3em 1em;
-      margin: 0;
+      padding-top: 60px;
+    }
+
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
 
     h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    }
-
-    p {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: 0 auto 2em;
-      line-height: 1.6;
+      font-size: 2.8em;
+      margin-bottom: 0.5em;
     }
 
     h2 {
-      margin-top: 2em;
-      font-size: 2em;
+      margin-top: 1.8em;
+      font-size: 1.8em;
       color: #ffd9d3;
     }
 
     ul {
-      text-align: left;
-      max-width: 600px;
-      margin: 1em auto;
-      padding-left: 1.2em;
-    }
-
-    ul li {
-      margin-bottom: 0.6em;
-      font-size: 1.1em;
-      position: relative;
+      list-style: none;
+      padding-left: 0;
     }
 
     ul li::before {
       content: "🔥";
-      position: absolute;
-      left: -1.2em;
-      top: 0;
+      margin-right: 10px;
     }
 
     button {
-      margin-top: 30px;
-      padding: 12px 30px;
-      font-size: 1em;
-      font-weight: bold;
       background-color: #fff;
       color: #e74c3c;
+      padding: 12px 30px;
       border: none;
-      border-radius: 25px;
-      cursor: pointer;
+      border-radius: 30px;
+      margin-top: 25px;
+      font-weight: bold;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       transition: background 0.3s, transform 0.2s;
     }
 
     button:hover {
-      background-color: #fdd;
+      background-color: #fce3e0;
       transform: scale(1.05);
     }
 
     #mensaje {
       margin-top: 25px;
-      font-size: 1.2em;
+      font-size: 1.1rem;
       font-style: italic;
       opacity: 0;
       transition: opacity 0.8s ease;
@@ -86,25 +75,29 @@
   </style>
 </head>
 <body>
-  <h1>😠 El Enojo</h1>
-  <p>El enojo es una emoción que aparece cuando sentimos injusticia, frustración o daño. No es mala, pero debemos aprender a expresarla bien.</p>
+  <div class="container">
+    <div class="content-box text-center">
+      <h1>😠 El Enojo</h1>
+      <p>El enojo es una emoción que aparece cuando sentimos injusticia, frustración o daño. No es mala, pero debemos aprender a expresarla bien.</p>
 
-  <h2>¿Cuándo sentimos enojo?</h2>
-  <ul>
-    <li>Cuando alguien nos falta al respeto</li>
-    <li>Al sentirnos incomprendidos</li>
-    <li>Cuando algo no sale como esperábamos</li>
-  </ul>
+      <h2>¿Cuándo sentimos enojo?</h2>
+      <ul class="text-left">
+        <li>Cuando alguien nos falta al respeto</li>
+        <li>Al sentirnos incomprendidos</li>
+        <li>Cuando algo no sale como esperábamos</li>
+      </ul>
 
-  <h2>¿Cómo controlarlo?</h2>
-  <ul>
-    <li>Respirar profundo y contar hasta 10</li>
-    <li>Hacer ejercicio o escribir lo que sientes</li>
-    <li>Hablar sin herir a otros</li>
-  </ul>
+      <h2>¿Cómo controlarlo?</h2>
+      <ul class="text-left">
+        <li>Respirar profundo y contar hasta 10</li>
+        <li>Hacer ejercicio o escribir lo que sientes</li>
+        <li>Hablar sin herir a otros</li>
+      </ul>
 
-  <button onclick="mostrarMensaje()">Mensaje para ti</button>
-  <div id="mensaje"></div>
+      <button onclick="mostrarMensaje()">Mensaje para ti</button>
+      <div id="mensaje"></div>
+    </div>
+  </div>
 
   <script>
     function mostrarMensaje() {
