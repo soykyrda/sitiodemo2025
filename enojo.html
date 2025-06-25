@@ -5,16 +5,23 @@
   <meta charset="UTF-8">
   <title>El Enojo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilos del index -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
+    body.enojo {
       background: linear-gradient(135deg, #e74c3c, #c0392b);
       color: #fff;
-      padding-top: 60px;
+    }
+
+    .contenido-enojo {
+      padding-top: 180px; /* Espacio para que el menú no tape */
     }
 
     .content-box {
@@ -26,7 +33,6 @@
 
     h1 {
       font-size: 2.8em;
-      margin-bottom: 0.5em;
     }
 
     h2 {
@@ -75,8 +81,50 @@
     }
   </style>
 </head>
-<body>
-  <div class="container">
+<body class="main-layout enojo">
+
+  <!-- Menú navbar original del index -->
+  <header>
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+            <div class="full">
+              <div class="center-desk">
+                <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+            <nav class="navigation navbar navbar-expand-md navbar-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="glasses.html">Our Glasses</a></li>
+                  <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                  <li class="nav-item d_none login_btn"><a class="nav-link" href="#">Login</a></li>
+                  <li class="nav-item d_none"><a class="nav-link" href="#">Register</a></li>
+                  <li class="nav-item d_none sea_icon">
+                    <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i><i class="fa fa-search"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <div class="container contenido-enojo">
     <div class="content-box text-center">
       <h1>😠 El Enojo</h1>
       <p>El enojo es una emoción que aparece cuando sentimos injusticia, frustración o daño. No es mala, pero debemos aprender a expresarla bien.</p>
@@ -100,6 +148,7 @@
     </div>
   </div>
 
+  <!-- Scripts del index -->
   <script>
     function mostrarMensaje() {
       const mensaje = document.getElementById('mensaje');
@@ -107,5 +156,10 @@
       mensaje.classList.add('visible');
     }
   </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 </html>
