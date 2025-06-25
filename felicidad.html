@@ -5,18 +5,22 @@
   <title>Felicidad</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Font Awesome para íconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Estilos base del sitio -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
 
-  <!-- Estilo personalizado -->
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    body.felicidad {
       background: linear-gradient(to bottom right, #dbdad5, #f39c12);
       color: #fff;
-      padding-top: 60px;
+    }
+
+    .contenido-felicidad {
+      padding-top: 180px; /* Evita que el menú tape el contenido */
     }
 
     .content-box {
@@ -63,10 +67,52 @@
     }
   </style>
 </head>
-<body>
-  <div class="container">
+<body class="main-layout felicidad">
+
+  <!-- Menú del index.html -->
+  <header>
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+            <div class="full">
+              <div class="center-desk">
+                <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+            <nav class="navigation navbar navbar-expand-md navbar-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="glasses.html">Our Glasses</a></li>
+                  <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                  <li class="nav-item d_none login_btn"><a class="nav-link" href="#">Login</a></li>
+                  <li class="nav-item d_none"><a class="nav-link" href="#">Register</a></li>
+                  <li class="nav-item d_none sea_icon">
+                    <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i><i class="fa fa-search"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="container contenido-felicidad">
     <div class="content-box text-center">
-      <h1><i class="fa-solid fa-face-smile-beam"></i> La Felicidad</h1>
+      <h1><i class="fa fa-smile-o"></i> La Felicidad</h1>
       <p>La felicidad es una emoción positiva que sentimos cuando experimentamos alegría, satisfacción o bienestar. Es clave para una vida equilibrada.</p>
 
       <h2>¿Cuándo sentimos felicidad?</h2>
@@ -88,10 +134,16 @@
     </div>
   </div>
 
+  <!-- Scripts -->
   <script>
     function mostrarMensaje() {
       document.getElementById('mensaje').textContent = 'Recuerda que la alegría se encuentra en lo sencillo ✨';
     }
   </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 </html>
