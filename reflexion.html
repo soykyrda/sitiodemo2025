@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reflexión</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Estilos base -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+
+  <style>
+    body.reflexion {
+      background: linear-gradient(to bottom right, #607d8b, #455a64);
+      color: #fff;
+    }
+
+    .contenido-reflexion {
+      padding-top: 180px;
+    }
+
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.12);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    button {
+      background-color: #fff;
+      color: #333;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ddd;
+    }
+
+    #mensaje {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #333;
+    }
+  </style>
+</head>
+<body class="main-layout reflexion">
+
+  <!-- Menú -->
+  <header>
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+            <div class="full">
+              <div class="center-desk">
+                <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+            <nav class="navigation navbar navbar-expand-md navbar-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="glasses.html">Our Glasses</a></li>
+                  <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                  <li class="nav-item d_none login_btn"><a class="nav-link" href="#">Login</a></li>
+                  <li class="nav-item d_none"><a class="nav-link" href="#">Register</a></li>
+                  <li class="nav-item d_none sea_icon">
+                    <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i><i class="fa fa-search"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <div class="container contenido-reflexion">
+    <div class="content-box text-center">
+      <h1><i class="fa fa-lightbulb-o"></i> La Reflexión</h1>
+      <p>La reflexión es un proceso de pensamiento profundo sobre nuestras emociones y experiencias, que nos ayuda a aprender y crecer.</p>
+
+      <h2>¿Por qué reflexionar?</h2>
+      <ul class="text-left">
+        <li>Nos permite entender mejor nuestras emociones</li>
+        <li>Favorece la toma de decisiones conscientes</li>
+        <li>Promueve el crecimiento personal</li>
+      </ul>
+
+      <h2>¿Cómo hacerlo?</h2>
+      <ul class="text-left">
+        <li>Dedica tiempo para ti mismo</li>
+        <li>Escribe un diario personal</li>
+        <li>Habla con personas de confianza</li>
+      </ul>
+
+      <button onclick="mostrarMensaje()">Mensaje para ti</button>
+      <div id="mensaje"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje').textContent = 'Reflexionar nos hace más conscientes y sabios 🧠';
+    }
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
