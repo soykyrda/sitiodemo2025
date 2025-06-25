@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Frustración</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Estilos base -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+
+  <style>
+    body.frustracion {
+      background: linear-gradient(to bottom right, #f44336, #e91e63);
+      color: #fff;
+    }
+
+    .contenido-frustracion {
+      padding-top: 180px;
+    }
+
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+
+
+    button {
+      background-color: #fff;
+      color: #f44336;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f8d7da;
+    }
+
+    #mensaje {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #fff;
+    }
+  </style>
+</head>
+<body class="main-layout frustracion">
+
+  <!-- Menú -->
+  <header>
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+            <div class="full">
+              <div class="center-desk">
+                <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+            <nav class="navigation navbar navbar-expand-md navbar-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="glasses.html">Our Glasses</a></li>
+                  <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                  <li class="nav-item d_none login_btn"><a class="nav-link" href="#">Login</a></li>
+                  <li class="nav-item d_none"><a class="nav-link" href="#">Register</a></li>
+                  <li class="nav-item d_none sea_icon">
+                    <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i><i class="fa fa-search"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <div class="container contenido-frustracion">
+    <div class="content-box text-center">
+      <h1><i class="fa fa-bolt"></i> La Frustración</h1>
+      <p>La frustración es una emoción que surge cuando algo no sale como esperamos, pero puede ser una oportunidad para aprender y crecer.</p>
+
+      <h2>¿Por qué ocurre?</h2>
+      <ul class="text-left">
+        <li>Cuando no logramos una meta</li>
+        <li>Cuando sentimos falta de control</li>
+        <li>Al enfrentar obstáculos inesperados</li>
+      </ul>
+
+      <h2>¿Cómo manejarla?</h2>
+      <ul class="text-left">
+        <li>Reconocer y aceptar la emoción</li>
+        <li>Buscar soluciones prácticas</li>
+        <li>Practicar la paciencia y la calma</li>
+      </ul>
+
+      <button onclick="mostrarMensaje()">Mensaje para ti</button>
+      <div id="mensaje"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje').textContent = 'La frustración puede ser un motor para tu crecimiento ⚡';
+    }
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
