@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Kuromi Mundo</title>
-      <meta name="description" content="Tienda inspirada en Kuromi, la rebelde con estilo de Sanrio">
-      <!-- Estilos base -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/responsive.css">
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+
+<head>
+   <meta charset="UTF-8">
+   <title>Felicidad</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Estilos base del sitio -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -21,13 +20,63 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
       integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
       crossorigin="anonymous"></script>
-      <link rel="icon" href="https://cdn.sanrio.com/uploads/image/file/41742/Kuromi-Icon.png" type="image/png" />
-   </head>
-   <body class="main-layout kuromi-theme">
-      <div class="loader_bg">
-         <div class="loader"><img src="https://cdn.sanrio.com/uploads/image/file/41743/Kuromi-Loading.gif" alt="Cargando" /></div>
-      </div>
-      <header>
+
+   <style>
+      body.felicidad {
+         background: linear-gradient(to bottom right, #dbdad5, #f39c12);
+         color: #fff;
+      }
+
+      .contenido-felicidad {
+         padding-top: 180px;
+         /* Evita que el menú tape el contenido */
+      }
+
+      .content-box {
+         background-color: rgba(255, 255, 255, 0.1);
+         padding: 30px;
+         border-radius: 15px;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      h1,
+      h2 {
+         color: #fff;
+      }
+
+      ul {
+         list-style: none;
+         padding-left: 0;
+      }
+
+      button {
+         background-color: #fff;
+         color: #333;
+         border: none;
+         padding: 10px 25px;
+         border-radius: 8px;
+         margin-top: 20px;
+         font-weight: bold;
+         transition: background 0.3s ease;
+      }
+
+      button:hover {
+         background-color: #ddd;
+      }
+
+      #mensaje {
+         margin-top: 20px;
+         font-size: 1.1rem;
+         font-style: italic;
+         color: #fff;
+      }
+   </style>
+</head>
+
+<body class="main-layout felicidad">
+
+   <!-- Menú del index.html -->
+   <header>
       <!-- header inner -->
       <div class="header">
          <div class="container-fluid">
@@ -130,84 +179,45 @@
          </div>
       </div>
    </header>
-      <section class="banner_main">
-         <div id="banner1" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container">
-                     <div class="carousel-caption">
-                        <div class="text-bg">
-                           <h1><span class="highlight">Bienvenido</span> al universo de Kuromi</h1>
-                           <figure><img src="https://cdn.sanrio.com/uploads/image/file/41739/Kuromi-Banner.png" alt="Banner Kuromi"/></figure>
-                           <a class="read_more" href="#">Explorar</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <div class="about">
-         <div class="container">
-            <div class="row d_flex">
-               <div class="col-md-5">
-                  <div class="about_img">
-                     <figure><img src="https://cdn.sanrio.com/uploads/image/file/41738/Kuromi-About.png" alt="Sobre Kuromi"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-7">
-                  <div class="titlepage">
-                     <h2>Descubre a Kuromi</h2>
-                     <p>Kuromi es traviesa, divertida y con una personalidad rebelde que no pasa desapercibida. Si te gusta su estilo punk-rock adorable, esta tienda es para ti.</p>
-                  </div>
-                  <a class="read_more" href="#">Leer más</a>
-               </div>
-            </div>
-         </div>
+
+   <!-- Contenido principal -->
+   <div class="container contenido-felicidad">
+      <div class="content-box text-center">
+         <h1><i class="fa fa-smile-o"></i> La Felicidad</h1>
+         <p>La felicidad es una emoción positiva que sentimos cuando experimentamos alegría, satisfacción o bienestar.
+            Es clave para una vida equilibrada.</p>
+
+         <h2>¿Cuándo sentimos felicidad?</h2>
+         <ul class="text-left">
+            <li>Al compartir tiempo con personas que queremos</li>
+            <li>Al lograr una meta personal</li>
+            <li>Al escuchar música que nos gusta</li>
+         </ul>
+
+         <h2>¿Cómo mantenerla?</h2>
+         <ul class="text-left">
+            <li>Agradecer las cosas pequeñas</li>
+            <li>Practicar actividades que te gustan</li>
+            <li>Rodearte de personas positivas</li>
+         </ul>
+
+         <button onclick="mostrarMensaje()">Mensaje para ti</button>
+         <div id="mensaje"></div>
       </div>
-      <div class="products">
-         <div class="container">
-            <div class="titlepage text-center">
-               <h2>Artículos de Kuromi</h2>
-               <p>Accesorios, ropa y decoración inspirados en la chica más ruda de Sanrio.</p>
-            </div>
-            <div class="row">
-               <div class="col-md-3">
-                  <div class="product_box">
-                     <figure><img src="https://cdn.sanrio.com/uploads/image/file/41737/Kuromi-Plush.png" alt="Peluche Kuromi"/></figure>
-                     <h3>Peluche</h3>
-                     <p><span class="price">$3,500</span></p>
-                  </div>
-               </div>
-            </div>
-            <div class="text-center">
-               <a class="read_more" href="#">Ver todos</a>
-            </div>
-         </div>
-      </div>
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <ul class="footer_links">
-                        <li><i class="fa fa-map-marker"></i> CDMX, México</li>
-                        <li><i class="fa fa-phone"></i> +34 900 543 210</li>
-                        <li><i class="fa fa-envelope"></i> contacto@kuromitienda.com</li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-            <div class="copyright">
-               <div class="container">
-                  <p>© 2025 Kuromi Tienda. Estilo rebelde con corazón.</p>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+      <a class="read_more" href="frustracion.html">Learn More</a>
+   </div>
+
+   <!-- Scripts -->
+   <script>
+      function mostrarMensaje() {
+         document.getElementById('mensaje').textContent = 'Recuerda que la alegría se encuentra en lo sencillo ✨';
+      }
+   </script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+
 </html>
